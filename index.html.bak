@@ -132,23 +132,14 @@
   </section>
   <section class="certification d-flex flex-column align-items-center justify-content-center" id="certification">
     <div class="title" data-aos="fade-down" data-aos-duration="1000">
-        <h2 class="text-center"><i class="fa fa-film"></i> Favorite Anime</h2>
+      <h2 class="text-center"><i class="fa fa-film"></i> Favorite Anime</h2>
     </div>
     <div class="content d-flex flex-wrap justify-content-center">
     </div>
     <div class="loadmore-btn my-5" data-aos="fade-down">
-        <a href="javascript:void(0);" class="btn btn-outline-primary" id="loadMoreBtn">Load More </a>
+      <a href="index.html#certifications" class="btn btn-outline-primary">Load More </a>
     </div>
-
-    <script>
-        document.getElementById('loadMoreBtn').addEventListener('click', function() {
-            var contentDiv = document.querySelector('.content')
-            var newText = document.createElement('p')
-            newText.textContent = 'My favorite Elaina'
-            contentDiv.appendChild(newText)
-        });
-    </script>
- </section>
+  </section>
   <section class="project " id="project">
     <div class="container d-flex flex-wrap justify-content-center align-items-center">
       <div class="title" data-aos="fade-down" data-aos-duration="1000">
@@ -157,7 +148,7 @@
       <div class="content d-flex flex-row flex-wrap align-items-center justify-content-center" data-aos="fade-down">
       </div>
       <div class="viewall-btn d-flex my-5 ">
-        <a href="index.html#project" class=" btn btn-outline-light" data-aos="fade-down"> <span>View All</span> <i
+        <a href="index.html#project" class=" btn btn-outline-light" data-aos="fade-down"> <span></span> <i
             class="fas fa-angle-right"></i> </a>
       </div>
     </div>
