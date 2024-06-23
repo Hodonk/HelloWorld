@@ -148,23 +148,7 @@
     <div class="content d-flex flex-row flex-wrap align-items-center justify-content-center" data-aos="fade-down">
       <!-- Daftar Harga -->
       <ul class="list-group" id="product-list">
-        <li class="list-group-item">Produk A: Rp. 100.000 <select class="custom-select" onchange="showProductDetail(this.value)">
-            <option value="Produk A">Detail</option>
-            <option value="Produk B">Detail</option>
-            <option value="Produk C">Detail</option>
-            <!-- Tambahkan produk lainnya sesuai kebutuhan -->
-          </select></li>
-        <li class="list-group-item">Produk B: Rp. 150.000 <select class="custom-select" onchange="showProductDetail(this.value)">
-            <option value="Produk A">Detail</option>
-            <option value="Produk B">Detail</option>
-            <option value="Produk C">Detail</option>
-          </select></li>
-        <li class="list-group-item">Produk C: Rp. 200.000 <select class="custom-select" onchange="showProductDetail(this.value)">
-            <option value="Produk A">Detail</option>
-            <option value="Produk B">Detail</option>
-            <option value="Produk C">Detail</option>
-          </select></li>
-        <!-- Tambahkan produk lainnya sesuai kebutuhan -->
+        <!-- List Kosong yang akan diisi oleh Javascript -->
       </ul>
     </div>
     <div class="viewall-btn d-flex my-5">
@@ -176,10 +160,40 @@
 </section>
 
 <script>
-  function showProductDetail(productName) {    
-    alert('Detail produk ' + productName)
-  }
+  document.addEventListener('DOMContentLoaded', function() {
+    const products = [
+      { name: 'Produk A', price: 'Rp. 100.000' },
+      { name: 'Produk B', price: 'Rp. 150.000' },
+      { name: 'Produk C', price: 'Rp. 200.000' }
+     
+    ];
+
+    const productList = document.getElementById('product-list');
+    products.forEach(product => {
+      const listItem = document.createElement('li');
+      listItem.className = 'list-group-item';
+      listItem.textContent = `${product.name}: ${product.price}`;
+
+      const selectElement = document.createElement('select');
+      selectElement.className = 'custom-select';
+      selectElement.setAttribute('onchange', 'showProductDetail(this.value)');
+
+      const optionDetail = document.createElement('option');
+      optionDetail.value = product.name;
+      optionDetail.textContent = 'Detail';
+
+      selectElement.appendChild(optionDetail);
+
+      listItem.appendChild(selectElement);
+      productList.appendChild(listItem);
+    });
+
+    function showProductDetail(productName) {
+      alert('Detail produk ' + productName);
+    }
+  });
 </script>
+
 
   <section id="contact" class="contact d-flex flex-column align-items-center justify-content-center text-center">
     <h2 class="title" data-aos="fade-down" data-aos-duration="1000">Get In <span>Touch</span></h2>
