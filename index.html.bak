@@ -143,71 +143,78 @@
  
  
  <section class="project" id="project">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
-                    <h2 class="section-title">
-                        <i class="fa fa-laptop-code"></i> Store List Harga
-                    </h2>
-                </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+                <h2 class="section-title text-orange">
+                    <i class="fa fa-laptop-code"></i> Store List Harga
+                </h2>
             </div>
+        </div>
 
-            <div class="row justify-content-center" data-aos="zoom-in">
-                <!-- Product Cards -->
-                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="product-card">
-                        <h3 class="text-center">Produk A</h3>
-                        <p class="text-center">Rp. 100.000</p>
-                        <div class="text-center">
-                            <button class="btn btn-outline-light" onclick="showProductDetail('Produk A')">Detail</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="product-card">
-                        <h3 class="text-center">Produk B</h3>
-                        <p class="text-center">Rp. 150.000</p>
-                        <div class="text-center">
-                            <button class="btn btn-outline-light" onclick="showProductDetail('Produk B')">Detail</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <div class="product-card">
-                        <h3 class="text-center">Produk C</h3>
-                        <p class="text-center">Rp. 200.000</p>
-                        <div class="text-center">
-                            <button class="btn btn-outline-light" onclick="showProductDetail('Produk C')">Detail</button>
-                        </div>
+        <div class="row justify-content-center" data-aos="zoom-in">
+            <!-- Product Cards -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1000">
+                <div class="product-card">
+                    <h3 class="text-center">Produk A</h3>
+                    <p class="text-center">Rp. 100.000</p>
+                    <div class="text-center">
+                        <button class="btn btn-outline-light" onclick="showProductDetail('Produk A')">Detail</button>
                     </div>
                 </div>
             </div>
 
-            <div class="row justify-content-center mt-5" data-aos="fade-down">
-                <div class="col-lg-8 text-center">
-                    <a href="#project" class="btn btn-outline-light">
-                        <span>View All</span> <i class="fas fa-angle-right"></i>
-                    </a>
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="product-card">
+                    <h3 class="text-center">Produk B</h3>
+                    <p class="text-center">Rp. 150.000</p>
+                    <div class="text-center">
+                        <button class="btn btn-outline-light" onclick="showProductDetail('Produk B')">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="product-card">
+                    <h3 class="text-center">Produk C</h3>
+                    <p class="text-center">Rp. 200.000</p>
+                    <div class="text-center">
+                        <button class="btn btn-outline-light" onclick="showProductDetail('Produk C')">Detail</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Bootstrap JS and Font Awesome -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <!-- AOS Library Script -->
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-        <script>
-            AOS.init();
+        <div class="row justify-content-center mt-5" data-aos="fade-down">
+            <div class="col-lg-8 text-center">
+                <a href="#project" class="btn btn-outline-light">
+                    <span>View All</span> <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 
-            function showProductDetail(productName) {
-                alert('Detail produk ' + productName);
-            }
-        </script>
-    </section>
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- AOS Library Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function showProductDetail(productName) {
+            alert('Detail produk ' + productName);
+        }
+    </script>
+
+    <style>
+        .text-orange {
+            color: orange;
+        }
+    </style>
+</section>
+
  
 
   <section id="contact" class="contact d-flex flex-column align-items-center justify-content-center text-center">
