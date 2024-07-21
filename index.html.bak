@@ -136,7 +136,7 @@
     </div>
     <div class="content d-flex flex-wrap justify-content-center">
         <div class="image-container my-3">
-            <img src="path/to/your/image.jpg" alt="Image description" class="rounded-glass">
+            <img src="https://telegra.ph/file/c85b9b43bffd926262012.jpg" alt="Image description" class="rounded-glass">
         </div>
         <p>haloo</p>
     </div>
