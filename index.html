@@ -130,7 +130,7 @@
       </div>
     </div>
   </section>
-  <section class="certification d-flex flex-column align-items-center justify-content-center" id="certification">
+ <section class="certification d-flex flex-column align-items-center justify-content-center" id="certification">
     <div class="title" data-aos="fade-down" data-aos-duration="1000">
       <h2 class="text-center"><i class="fa fa-film"></i> Favorite Anime</h2>
     </div>
@@ -157,15 +157,30 @@
         <li style="color: #dc3545;"><strong>Anime Adaptation:</strong> The anime was produced by C2C and aired in the fall of 2020. It received praise for its beautiful animation, engaging storytelling, and the charm of its main character, Elaina.</li>
       </ul>
 
-      <p style="color: #17a2b8;"> 𖤇 If you want to ask about WhatsApp bots, don't hesitate to ask!</p>
+      <p style="color: #17a2b8;">𖤇 If you want to ask about WhatsApp bots, don't hesitate to ask!</p>
+      <p id="runtime" style="color: #000;"></p>
     </div>
 </section>
 
 <script>
 function showMoreText() {
     document.getElementById("moreText").style.display = "block";
+    startRuntime();
+}
+
+function startRuntime() {
+    var startTime = Date.now();
+    setInterval(function() {
+        var elapsedTime = Date.now() - startTime;
+        var seconds = Math.floor((elapsedTime / 1000) % 60);
+        var minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+        var hours = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
+        var timeString = `Runtime: ${hours}h ${minutes}m ${seconds}s`;
+        document.getElementById("runtime").innerText = timeString;
+    }, 1000);
 }
 </script>
+
  <section class="project" id="project">
     <div class="container">
         <div class="row justify-content-center">
