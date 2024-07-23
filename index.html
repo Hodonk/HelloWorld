@@ -250,67 +250,42 @@ function showMoreText() {
        href="mailto:fuadxy99@gmail.com" target="_blank">Say contact <i class="fa fa-envelope"></i></a>
 </section>
   <footer id="footer" class="footer d-flex flex-column">
-    <div class="top d-flex justify-content-sm-around">
-      <div class="content d-flex flex-column">
-        <img src="https://telegra.ph/file/be4c3defb8fc9dc6fbb0f.jpg" alt="FuadXyro">
-        <h3 class="animated-text">FuadXyro</h3> <!-- teks animasi warna-warni -->
-        <p>Thank you for visiting my personal portfolio website.</p>
-      </div>
-      <div class="content d-flex flex-column">
-        <h3>Useful Links</h3>
-        <a href="index.html#home"><i class="fa fa-arrow-circle-right"></i> Home</a>
-        <a href="index.html#about"><i class="fa fa-arrow-circle-right"></i> About</a>
-        <a href="index.html#certification"><i class="fa fa-arrow-circle-right"></i> Anime</a>
-        <a href="index.html#project"><i class="fa fa-arrow-circle-right"></i> Store</a>
-        <a href="https://wa.me/62838377093312?text=menu"><i class="fa fa-arrow-circle-right"></i> BotWa</a>
-      </div>
-      <div class="content d-flex flex-column">
-        <h4>Contact</h4>
-        <a href="cdn-cgi/l/email-protection.html#bec7d1d9d7cecbd0d9d9d7d0d9888986fed9d3dfd7d290ddd1d3" rel="noopener noreferrer" target="_blank">
-          <i class="fas fa-envelope"></i> <span>fuadxy99@gmail.com</span>
-        </a>
-        <a><i class="fas fa-map-marked-alt"></i> East Java, Indonesia</a>
-        <div class="socials">
-          <a href="https://chat.whatsapp.com/KdA1i8HiygF3250t90nKVV" class="fab fa-whatsapp" aria-label="Whatsapp" target="_blank"></a>
-          <a href="https://github.com/FuadXyro" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-          <a href="https://instagram.com/fuadxy99" class="fab fa-instagram" aria-label="Instagram" target="_blank"></a>
-        </div>
+  <div class="top d-flex justify-content-sm-around">
+    <div class="content d-flex flex-column">
+      <img src="https://telegra.ph/file/be4c3defb8fc9dc6fbb0f.jpg" alt="FuadXyro">
+      <h3 class="animated-text">FuadXyro</h3>
+      <p>Thank you for visiting my personal portfolio website.</p>
+    </div>
+    <div class="content d-flex flex-column">
+      <h3>Useful Links</h3>
+      <a href="index.html#home"><i class="fa fa-arrow-circle-right"></i> Home</a>
+      <a href="index.html#about"><i class="fa fa-arrow-circle-right"></i> About</a>
+      <a href="index.html#certification"><i class="fa fa-arrow-circle-right"></i> Anime</a>
+      <a href="index.html#project"><i class="fa fa-arrow-circle-right"></i> Store</a>
+      <a href="https://wa.me/62838377093312?text=menu"><i class="fa fa-arrow-circle-right"></i> BotWa</a>
+    </div>
+    <div class="content d-flex flex-column">
+      <h4>Contact</h4>
+      <a href="mailto:fuadxy99@gmail.com" rel="noopener noreferrer" target="_blank">
+        <i class="fas fa-envelope"></i> <span>fuadxy99@gmail.com</span>
+      </a>
+      <a>
+        <i class="fas fa-map-marked-alt"></i> East Java, Indonesia
+      </a>
+      <div class="socials">
+        <a href="https://chat.whatsapp.com/KdA1i8HiygF3250t90nKVV" class="fab fa-whatsapp" aria-label="Whatsapp" target="_blank"></a>
+        <a href="https://github.com/FuadXyro" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+        <a href="https://instagram.com/fuadxy99" class="fab fa-instagram" aria-label="Instagram" target="_blank"></a>
       </div>
     </div>
-    <div class="bottom">
-      <div class="text-center p-4">
-        © 2024 Copyright: <a class="text-reset fw-bold" href="not">FuadXyro</a>
-      </div>
+  </div>
+  <div class="bottom">
+    <div class="text-center p-4">
+      © 2024 Copyright: <a class="text-reset fw-bold" href="#">FuadXyro</a>
     </div>
-  </footer>
-
-<!-- CSS untuk animasi teks warna-warni -->
-<style>
-  .animated-text {
-    display: inline-block;
-  }
-  .animated-text span {
-    display: inline-block;
-    animation: colorChange 1s infinite alternate;
-  }
-  @keyframes colorChange {
-    0% { color: red; }
-    25% { color: orange; }
-    50% { color: yellow; }
-    75% { color: green; }
-    100% { color: blue; }
-  }
-</style>
-
-<script>
-  // JavaScript untuk menambahkan span ke setiap huruf
-  document.addEventListener("DOMContentLoaded", function() {
-    const animatedText = document.querySelector('.animated-text');
-    const text = animatedText.textContent;
-    animatedText.innerHTML = text.split('').map(letter => `<span>${letter}</span>`).join('');
-  });
-</script>
-
+  </div>
+</footer>
+<!-- Include your CDN script for JavaScript here -->
   <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
     integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="

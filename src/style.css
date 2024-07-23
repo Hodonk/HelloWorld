@@ -856,7 +856,8 @@ footer .content .socials a.instagram:hover {
 }
 
 .animated-text {
-  background: -webkit-linear-gradient(#ff0000, #00ff00, #0000ff);
+  background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff, #ff0000);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientAnimation 3s infinite linear;
